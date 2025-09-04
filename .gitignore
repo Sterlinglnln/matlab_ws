@@ -1,0 +1,41 @@
+# 1. MATLAB 自动生成的临时文件
+*.mat        # 数据文件（通常较大，且可通过代码再生）
+*.fig        # 图形文件（除非需要共享图表布局，否则可忽略）
+*.mex*       # 编译后的可执行文件（如 .mexa64, .mexw64 等）
+*.p          # 预编译的 MATLAB 代码文件
+*.asv        # 自动保存的备份文件（如 script.asv 是 script.m 的备份）
+*.sldd       # Simulink 数据字典备份
+*.slxc       # Simulink 缓存文件
+*.slprj/     # Simulink 代码生成文件夹（自动生成，可通过模型再生）
+rtw/         # Real-Time Workshop 生成的代码
+_pcode/      # 生成的 pcode 文件夹
+html/        # MATLAB 帮助文档或报告生成的 HTML 文件夹
+
+# 2. 日志和缓存文件
+*.log        # 日志文件
+*.txt        # 非源代码的文本文件（如输出日志，需保留的文本文件可单独排除）
+*.bak        # 手动备份文件
+*.tmp        # 临时文件
+.cache/      # 缓存文件夹
+history/     # MATLAB 命令历史缓存
+
+# 3. 项目配置文件（本地环境相关，不适合共享）
+*.prj        # MATLAB 项目文件（若团队使用相同配置可保留，否则忽略）
+*.settings   # 本地设置文件
+*.mlsettings # MATLAB 环境设置
+matlabprefs.mat  # MATLAB 偏好设置文件
+
+# 4. 第三方工具或 IDE 相关文件
+.vscode/     # VS Code 配置（若团队统一使用可保留，否则忽略）
+
+# 5. 敏感信息或大型数据
+data/        # 数据文件夹（若数据量大或包含敏感信息，建议忽略）
+output/      # 输出文件文件夹（如生成的图表、报告等，可通过代码再生）
+*.csv        # 数据文件（若需共享特定 CSV，可通过 !*.csv 例外保留）
+*.xlsx       # Excel 数据文件
+
+# 6. Simulink 相关临时文件
+*.mdl.r20*   # Simulink 模型的版本兼容文件
+*.slx.r20*   # Simulink 模型的版本兼容文件
+*.slddc      # Simulink 数据字典缓存
+*.slxc       # Simulink 缓存文件
